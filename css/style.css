@@ -10,7 +10,15 @@ body {
   height: 100vh;
 }
 
+.wrapper {
+  height: calc(100% - 90px);
+  background-color: red;
+}
 
+footer {
+  height: 90px;
+  background-color: green;
+}
 
 
 
