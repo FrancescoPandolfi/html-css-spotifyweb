@@ -8,16 +8,49 @@ body {
   background-color: black;
   width: 100%;
   height: 100vh;
+  color: #7d7f84;
 }
 
 .wrapper {
   height: calc(100% - 90px);
-  background-color: red;
+  background-color: tomato;
+  display: flex;
+  overflow: hidden;
 }
+nav {
+  background-color: #000;
+  width: 230px;
+  height: 100%;
+
+}
+main {
+  width: calc(100% - 230px);
+  overflow-y: scroll;
+  background-color: #141922;
+  padding: 90px 0 0 0;
+}
+
+.upgrade-bar {
+  width: calc(100% - 230px);
+  height: 90px;
+  position: fixed;
+  top: 0;
+  left: 230px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 0 60px 0 0;
+  background-color: rgba(0, 0, 0, 0.3);
+
+}
+.btn-upgrade {
+
+}
+
 
 footer {
   height: 90px;
-  background-color: green;
+  background-color: #282828;
 }
 
 
