@@ -4,32 +4,70 @@
   box-sizing: border-box;
 }
 
+/* GENERAL PROPERTIES */
+a.btn {
+  color: #6f6f6f;
+  font-weight: bold;
+  text-decoration: none
+  }
+
 body {
   background-color: black;
   width: 100%;
   height: 100vh;
   color: #7d7f84;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
 }
-
 .wrapper {
   height: calc(100% - 90px);
   background-color: tomato;
   display: flex;
   overflow: hidden;
 }
+
+/* NAV */
 nav {
   background-color: #000;
   width: 230px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 
 }
+.logo {
+  padding: 21px;
+}
+.logo img {
+  width: 132px;
+}
+.menu {
+padding-left: 21px;
+}
+.btn_menu {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+.btn_menu img{
+  width: 24px;
+  margin-right: 10px;
+}
+.playlist-list {
+  overflow: auto;
+  flex-grow: 2;
+  min-height: 50px;
+}
+
+
+
+/* MAIN */
 main {
   width: calc(100% - 230px);
   overflow-y: scroll;
   background-color: #141922;
   padding: 90px 0 0 0;
 }
-
 .upgrade-bar {
   width: calc(100% - 230px);
   height: 90px;
@@ -41,13 +79,42 @@ main {
   align-items: center;
   padding: 0 60px 0 0;
   background-color: rgba(0, 0, 0, 0.3);
-
 }
 .btn-upgrade {
-
+  border: 1px solid white;
+  padding: 12px 40px;
+  border-radius: 20px;
+}
+a.btn-upgrade {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
+  /* Recently played */
+  .recently-played {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .r-p_items img  {
+  width: 100%;
+  }
+  /* Created for */
 
+  /* Popular artists */
+
+
+
+
+
+/* PLAYER */
 footer {
   height: 90px;
   background-color: #282828;
