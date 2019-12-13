@@ -276,7 +276,7 @@ main {
 .btn-upgrade {
   border: 1px solid white;
   padding: 12px 40px;
-  border-radius: 20px;
+  border-radius: 25px;
   min-width: 240px;
   text-align: center;
 }
@@ -285,6 +285,7 @@ a.btn-upgrade {
   text-decoration: none;
   text-transform: uppercase;
   transition: transform .3s ease;
+  font-size: 13px;
 }
 a:hover.btn-upgrade {
   transform: scale(1.1);
@@ -380,8 +381,6 @@ h4.subtitles {
   }
 }
 
-
-
   /* Created for */
   .created-for {
     display: flex;
@@ -396,8 +395,117 @@ h4.subtitles {
     flex-wrap: nowrap;
   }
 
-/* PLAYER */
-footer {
+/* FOOTER */
+.now_playing_bar {
   height: 90px;
   background-color: #282828;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 12px;
+
+}
+/* LEFT */
+.now_playing {
+  width: 300px;
+  display: flex;
+  align-items: center;
+}
+.now_playing_img {
+  max-width: 42px;
+  min-width: 28px;
+}
+.now_playing_img img {
+  width: 100%;
+  display: block;
+}
+.now_playing_title {
+  flex-grow: 2;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 120px;
+}
+.now_playing_title a:first-child {
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+}
+.now_playing_title a:last-child {
+  text-decoration: none;
+  color: #848484;
+  font-size: 11px;
+  font-weight: 600;
+}
+.now_playing_icons i {
+  padding: 3px 0 3px 5px;
+}
+
+/* CENTER */
+.player_control {
+  width: 100%;
+  flex-grow: 1.5;
+  color: white;
+  margin: 0 20px;
+}
+.player_control_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.player_control_buttons i {
+  padding: 0 14px 8px;
+}
+.player_control_buttons i:first-child {
+  padding: 0 6px 8px 0;
+}
+.player_control_buttons i:last-child {
+  padding: 0 0 8px 6px;
+}
+.far.fa-play-circle {
+  font-size: 30px;
+}
+.playback_bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.playback_bar_time1 {
+  font-size: 9px;
+  padding: 0 20px 0 0;
+}
+.playback_bar_time2 {
+  font-size: 9px;
+  padding: 0 0 0 20px;
+}
+.progress_bar {
+  height: 4px;
+  width: 80%;
+  max-width: 430px;
+  border-radius: 3px;
+  background: #5a5a5a;
+
+}
+
+
+/* RIGHT */
+.now_playing_right  {
+  width: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.now_playing_right i {
+  padding: 0 14px 0 0;
+}
+.volume {
+  height: 4px;
+  width: 100%;
+  max-width: 120px;
+  min-width: 100px;
+  border-radius: 3px;
+  background: #5a5a5a;
 }
