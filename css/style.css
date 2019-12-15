@@ -355,6 +355,9 @@ text-align: center;
   position: relative;
   display: block;
 }
+.border_radius {
+  border-radius: 50%;
+}
 h3.titles_main {
 color: white;
 margin-top: 15px;
