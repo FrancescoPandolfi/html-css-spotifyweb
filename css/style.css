@@ -413,13 +413,17 @@ h4.subtitles {
 .btn_player:hover {
   color: white;
 }
+.btn_player {
+  flex: 0 1;
+}
+
 .now_playing_title .author:hover {
   color: white;
   text-decoration: underline;
 }
 /* LEFT */
 .now_playing {
-  width: 300px;
+  flex: 0 1 300px;
   display: flex;
   align-items: center;
 }
@@ -432,7 +436,7 @@ h4.subtitles {
   display: block;
 }
 .now_playing_title {
-  flex-grow: 2;
+  flex-grow: 1;
   padding-left: 10px;
   padding-right: 10px;
   max-width: 120px;
@@ -457,10 +461,10 @@ h4.subtitles {
 
 /* CENTER */
 .player_control {
-  width: 100%;
-  flex-grow: 1.5;
+  flex: 1 1 100%;
   color: 868686;
   margin: 0 20px;
+  background-color: gold
 }
 .player_control_buttons {
   display: flex;
@@ -525,7 +529,7 @@ h4.subtitles {
 
 /* RIGHT */
 .now_playing_right  {
-  width: 340px;
+  flex: 0 1 340px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -535,9 +539,7 @@ h4.subtitles {
 }
 .volume {
   height: 4px;
-  width: 100%;
-  max-width: 120px;
-  min-width: 80px;
+  flex: 0 1 120px;
   border-radius: 3px;
   background: #5a5a5a;
 }
