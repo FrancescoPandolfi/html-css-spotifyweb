@@ -462,9 +462,8 @@ h4.subtitles {
 /* CENTER */
 .player_control {
   flex: 1 1 100%;
-  color: 868686;
+  color: #868686;
   margin: 0 20px;
-  background-color: gold
 }
 .player_control_buttons {
   display: flex;
