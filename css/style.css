@@ -409,6 +409,7 @@ h4.subtitles {
   flex-direction: row;
   align-items: center;
   padding: 12px 12px;
+  overflow: hidden;
 }
 .btn_player:hover {
   color: white;
